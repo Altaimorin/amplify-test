@@ -64,11 +64,14 @@ function App() {
 }, []);
 
   return (
+    <>
+    <h1 style={{marginBottom: "2rem"}}>Welcome to Chi's React Deployment Test!</h1>
     <div className="App">
       {objects.map((o) => (
         <div key={o.ETag}>{o.Key}</div>
       ))}
     </div>
+    </>
   );
 }
 
